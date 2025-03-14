@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Analytics } from "@vercel/analytics/react"
+
 
 const youResultText = document.getElementById("result-text1");
 const computerResultText = document.getElementById("result-text2");
@@ -85,5 +85,54 @@ function wins(reset) {
     winResultText.innerHTML = win;
     lossResultText.innerHTML = loss;
     tieResultText.innerHTML = tie;
-<Analytics />
+
+<>
+<div class="rps">
+        
+        <div class="row">
+            <div>
+                <label class="text">Make your selection:</label>
+                <button class="btn" onclick="option('rock')">Rock</button>
+                <button class="btn" onclick="option('paper')">Paper</button>
+                <button class="btn" onclick="option('scissors')">Scissors</button>
+                <button class="reset" onclick="wins('reset')">Reset</button> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="you">
+                <label class="yourchoice">You:</label>
+                <span id="result-text1"></span>
+            </div>
+            <div class="computer">
+                <label class="computerchoice">Computer:</label>
+                <span id="result-text2"></span>
+            </div>       
+        </div>
+        <div class="row">
+            <div class="winner">
+                <label class="outcome">Winner:</label>
+                <span id="result-text"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wins">
+                <label class="outcome">Wins:</label>
+                <span class="result-text3"></span>
+            </div>
+            <div class="losses">
+                <label class="outcome">Losses:</label>
+                <span class="result-text4"></span>
+            </div>
+            <div class="ties">
+                <label class="outcome">Ties:</label>
+                <span class="result-text5"></span>
+            </div>
+        </div>
+    </div>
+</>
 }
+
+//Use React useState instead of direct DOM manipulation (document.getElementById).
+//proper event handlers with onClick={() => option("Rock")} instead of onclick="option('rock')" (which doesn’t work in React).
+//State updates correctly, ensuring React re-renders the component when values change.
+//Uses resetGame function to properly reset all states.
