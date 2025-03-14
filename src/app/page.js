@@ -131,7 +131,7 @@ function wins(reset) {
     </div>
 </>
 }
-
+//test
 //Use React useState instead of direct DOM manipulation (document.getElementById).
 //proper event handlers with onClick={() => option("Rock")} instead of onclick="option('rock')" (which doesn’t work in React).
 //State updates correctly, ensuring React re-renders the component when values change.
