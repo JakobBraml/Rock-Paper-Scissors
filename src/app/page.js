@@ -92,10 +92,10 @@ function wins(reset) {
         <div class="row">
             <div>
                 <label class="text">Make your selection:</label>
-                <button class="btn" option="option('rock')">Rock</button>
-                <button class="btn" option="option('paper')">Paper</button>
-                <button class="btn" option="option('scissors')">Scissors</button>
-                <button class="reset" option="wins('reset')">Reset</button> 
+                <button class="btn" onClick={() => option("Rock")}>Rock</button>
+                <button class="btn" onClick={() => option("Paper")}>Paper</button>
+                <button class="btn" onClick={() => option("Scissors")}>Scissors</button>
+                <button class="reset" onClick={() => option("Reset")}>Reset</button> 
             </div>
         </div>
         <div class="row">
