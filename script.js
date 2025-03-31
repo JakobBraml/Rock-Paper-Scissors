@@ -1,7 +1,9 @@
-"use client";
-import { useState } from "react";
-
-
+//three options rock paper scissors
+//play aganist the computer
+//click your option and hit submit
+//computer then will display computer choice
+//saying if you won or not
+//keeps track of wins on a counter
 const youResultText = document.getElementById("result-text1");
 const computerResultText = document.getElementById("result-text2");
 const resultResultText = document.getElementById("result-text");
@@ -86,53 +88,6 @@ function wins(reset) {
     lossResultText.innerHTML = loss;
     tieResultText.innerHTML = tie;
 
-<>
-<div class="rps">
-        
-        <div class="row">
-            <div>
-                <label class="text">Make your selection:</label>
-                <button class="btn" option="option('rock')">Rock</button>
-                <button class="btn" option="option('paper')">Paper</button>
-                <button class="btn" option="option('scissors')">Scissors</button>
-                <button class="reset" option="wins('reset')">Reset</button> 
-            </div>
-        </div>
-        <div class="row">
-            <div class="you">
-                <label class="yourchoice">You:</label>
-                <span id="result-text1"></span>
-            </div>
-            <div class="computer">
-                <label class="computerchoice">Computer:</label>
-                <span id="result-text2"></span>
-            </div>       
-        </div>
-        <div class="row">
-            <div class="winner">
-                <label class="outcome">Winner:</label>
-                <span id="result-text"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="wins">
-                <label class="outcome">Wins:</label>
-                <span class="result-text3"></span>
-            </div>
-            <div class="losses">
-                <label class="outcome">Losses:</label>
-                <span class="result-text4"></span>
-            </div>
-            <div class="ties">
-                <label class="outcome">Ties:</label>
-                <span class="result-text5"></span>
-            </div>
-        </div>
-    </div>
-</>
 }
 
-//Use React useState instead of direct DOM manipulation (document.getElementById).
-//proper event handlers with onClick={() => option("Rock")} instead of onclick="option('rock')" (which doesn’t work in React).
-//State updates correctly, ensuring React re-renders the component when values change.
-//Uses resetGame function to properly reset all states.
+
