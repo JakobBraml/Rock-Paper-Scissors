@@ -1,5 +1,5 @@
 //three options rock paper scissors
-//play aganist the computer
+//play against the computer
 //click your option and hit submit
 //computer then will display computer choice
 //saying if you won or not
@@ -89,5 +89,3 @@ function wins(reset) {
     tieResultText.innerHTML = tie;
 
 }
-
-
