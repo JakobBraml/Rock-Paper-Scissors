@@ -5,10 +5,10 @@
     display: inline-block;
     width: 50%;
     border-radius: 25px;
-    
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .winner {
@@ -22,7 +22,6 @@
     align-items: center;
     text-emphasis-color: white;
     width: 100%;
-
 }
 
 .wins {
@@ -36,7 +35,6 @@
     align-items: center;
     text-emphasis-color: white;
     width: 100%;
-
 }
 
 .losses {
@@ -64,7 +62,6 @@
     align-items: center;
     text-emphasis-color: white;
     width: 100%;
-
 }
 
 .computer {
@@ -78,7 +75,6 @@
     align-items: center;
     text-emphasis-color: white;
     width: 50%;
-
 }
 
 .you {
@@ -95,40 +91,13 @@
 
 }
 
-.result-text {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.result-text1 {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.result-text2 {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.result-text2 {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .row {
     display: flex;
     height: 30px;
     gap: 5px;
     margin-top: 10px;
     flex: 1;
-    
 }
-
 
 .btn {
     font-size: 15px;

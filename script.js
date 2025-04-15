@@ -1,9 +1,3 @@
-//three options rock paper scissors
-//play against the computer
-//click your option and hit submit
-//computer then will display computer choice
-//saying if you won or not
-//keeps track of wins on a counter
 const youResultText = document.getElementById("result-text1");
 const computerResultText = document.getElementById("result-text2");
 const resultResultText = document.getElementById("result-text");
@@ -30,8 +24,8 @@ function option(choice) {
     }
 
     youResultText.innerHTML = you;
-    random();//used to run random function when function option is triggered 
-    winner();//used to run winner function when function option is triggered
+    random(); 
+    winner();
     wins();
 }
 
