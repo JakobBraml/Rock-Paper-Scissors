@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
 .rps {
     max-width: 400px;
     border: 2px solid grey;
@@ -9,6 +13,7 @@
     flex-direction: column;
     margin: 0 auto;
     margin-top: 50px;
+    background-color: rgb(92, 91, 91);
 }
 
 .winner {
@@ -105,6 +110,7 @@
     flex: 1;
     border-radius: 15px;
     background-color: gray;
+    border: 2px solid black;
 }
 
 .btn:active {
